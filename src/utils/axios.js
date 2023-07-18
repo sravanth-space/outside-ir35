@@ -3,7 +3,7 @@ import { clearStore } from "../features/user/userSlice";
 import { getUserFromLocalStorage } from "./localStorage";
 
 const customFetch = axios.create({
-  baseURL: "https://oir35-api.onrender.com/api/v1/",
+  baseURL: "http://18.133.248.188:5000/api/v1/",
 });
 
 customFetch.interceptors.request.use(config => {
